@@ -1,0 +1,36 @@
+
+#stats{
+  height: 80vh;
+  background-color: lightyellow;
+}
+
+#stats .content{
+  height: 89%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carreStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: grey solid 1px;
+  border-radius: 9px;
+  height: 40vh;
+  width: 20%;
+  background-color: white;
+}
+
+.carreStat > h1 {
+  font-size: 5.5em;
+  color: black;
+  background-color: white;
+  margin: 0;
+}
+
+.carreStat > p{
+  text-align: center;
+}

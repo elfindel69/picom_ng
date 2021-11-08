@@ -1,0 +1,403 @@
+#client{
+    height: 100vh;
+}
+
+#content{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#content-add{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auto{
+    height: auto;
+}
+
+#hello{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    top: 10%;
+    right: 0;
+    width: 208px;
+    height: 69px;
+    padding: 0;
+    color: 0;
+    /* light blue 100 */
+
+    background: #0396FA;
+}
+
+#hello p{
+    color: white;
+}
+
+.boxTri{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxZone{
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+
+    background: #FFFFFF;
+    border: 1px solid #0396FA;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 56px;
+}
+
+.down-arrow{
+    width: 21px;
+    height: 21px;
+    background-image: url('/assets/img/down-arrow-svgrepo-com.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+#box-annonces{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-annonces{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-annonces{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    border: 1px solid lightgray;
+
+   /* filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.08));*/
+}
+
+.img1{
+    width: 80px;
+    height: 120px;
+    background-image: url('/assets/img/2_159.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    width: 80px;
+    height: 120px;
+    background-image: url('/assets/img/1_198.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img3{
+    width: 80px;
+    height: 120px;
+    background-image: url('/assets/img/ebf008014722e98b07daf8c6bbd58a84.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img4{
+    width: 80px;
+    height: 120px;
+    background-image: url('/assets/img/restaurant-poster-template-b9c62d7766c317d732c239be35f6edbb.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.status{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.row1,.row2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.status-circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid beige;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.disabled{
+    background-color: lightgray;
+}
+
+.status-edit{
+    width: 25px;
+    height: 25px;
+    background-image: url('/assets/img/edit.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.status-delete{
+    width: 25px;
+    height: 25px;
+    background-image: url('/assets/img/x-button.png');
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.status-more{
+    width: 25px;
+    height: 25px;
+    background-image: url('/assets/img/add.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.box-buttons{
+    margin-top: 25px;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-see-all, .btn-add{
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    background-color: #7903FA;
+}
+
+.card-details{
+    width: 70%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px;
+    background: #FFFFFF;
+
+    /* hover effect */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.col{
+    flex-direction: column;
+}
+
+.big{
+    height: 65%;
+}
+
+.very-big{
+    height: 80%;
+}
+
+.img-details{
+    height: 100%;
+    width: 25%;
+  border-radius: 5px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 32px;
+
+  background: #FFFFFF url('/assets/img/2_159.jpg') center;
+  background-size: cover;
+
+}
+
+.text-details{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+}
+
+.row-details{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.blue{
+    color: #0F1DF6;
+    margin-right: 5px;
+}
+
+.center{
+    text-align: center;
+}
+.boutons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px;
+    width: 100%;
+    height: 25%;
+    margin-top: 15px;
+}
+
+.btn-stats{
+    display: inline-block;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+    background: #7903FA;
+    border-radius: 20px;
+    color:white;
+}
+
+.btn-retour{
+    display: inline-block;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+    background: #0396FA;
+    border-radius: 20px;
+    color:white;
+}
+
+.btn-red{
+    display: inline-block;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+    background: #FA1203;
+    border-radius: 20px;
+    color:white;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.row-btns{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top{
+    margin-top: 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+
+
+    background: #FFFFFF;
+    /* light blue 100 */
+
+    border: 1px solid #0396FA;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    /* Inside Auto Layout */
+    margin: 20px 0px;
+}
+
+.choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%;
+    height: 60%;
+}
+
+.map{
+    height: 349px;
+    width: 309px;
+    background-image: url('/assets/img/Arrondissements_de_Lyon.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.choice-text{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+
+}
+
+.hour-cards{
+    position: absolute;
+    width: 30%;
+    height: 100px;
+    overflow-x: scroll;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
