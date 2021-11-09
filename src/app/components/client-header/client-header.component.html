@@ -1,0 +1,27 @@
+<nav>
+  <div id="logos">
+    <div id="tcl"></div>
+    <p id="PiCom">Pi<span id="Com">Com</span></p>
+  </div>
+  <div id="menu-items">
+    <a routerLink="client/index" routerLinkActive="true">Annonces</a>
+    <a href="#stats">Tarifs</a>
+    <a href="create_add.html">Ajout</a>
+    <a href="client_stats.html">Statistiques</a>
+    <a href="#avis">Mon Compte</a>
+  </div>
+  <div class="btn btn-primary" id="deconnexion">
+    <div id="connexion-flex">
+      <div id="open-lock"></div>
+      <button
+        *ngIf = "token"
+        (click)="onClickLogout()"
+        class="btn btn-outline-dark">
+        Deconnexion
+      </button>
+    </div>
+  </div>
+</nav>
+<div id="hello">
+  <p>Bonjour Lionel Martin</p>
+</div>

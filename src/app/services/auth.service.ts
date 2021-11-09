@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject} from "rxjs";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,10 @@ export class AuthService {
   }
 
   login(email: string, password: string):Promise<any> {
-    return this.http.post("http://localhost:8000/login",{email,password}
+    const options = {headers:new HttpHeaders       ({
+      'Access-Control-Allow-Origin':'*'
+    })}
+    return this.http.post("http://localhost:8080/clients/login",{email,password},options
     ).toPromise().then((resp:any) =>{this.token.next(resp)});
   }
 

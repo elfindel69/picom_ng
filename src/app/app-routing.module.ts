@@ -6,14 +6,16 @@ import { TarifsComponent } from './views/tarifs/tarifs.component';
 import {StatsComponent} from "./views/stats/stats.component";
 import {AvisComponent} from "./views/avis/avis.component";
 import {LoginComponent} from "./views/login/login.component";
+import {ClientIndexComponent} from "./views/client-index/client-index.component";
 
 let IndexComponent;
 const routes: Routes = [
-  {path: 'home',component:HomeComponent},
+  {path: '',component:HomeComponent},
   {path:'tarifs',component:TarifsComponent},
   {path:'stats',component:StatsComponent},
   {path:'avis',component:AvisComponent},
   {path: 'login',component:LoginComponent},
+  {path: 'client/index',component:ClientIndexComponent},
   {path: 'not-found',component:ErrorComponent},
   {path:"**",redirectTo:'not-found'}];
 

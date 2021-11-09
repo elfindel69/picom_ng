@@ -13,6 +13,8 @@ import { StatsComponent } from './views/stats/stats.component';
 import { AvisComponent } from './views/avis/avis.component';
 import {AuthService} from "./services/auth.service";
 import { LoginComponent } from './views/login/login.component';
+import { ClientIndexComponent } from './views/client-index/client-index.component';
+import { ClientHeaderComponent } from './components/client-header/client-header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LoginComponent } from './views/login/login.component';
     HeaderComponent,
     StatsComponent,
     AvisComponent,
-    LoginComponent
+    LoginComponent,
+    ClientIndexComponent,
+    ClientHeaderComponent
   ],
   imports: [
     BrowserModule,
