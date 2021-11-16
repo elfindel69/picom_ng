@@ -7,8 +7,10 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 })
 export class AuthService {
   token: BehaviorSubject<string>
+  clientEmail: BehaviorSubject<string>
   constructor(private http:HttpClient) {
     this.token = new BehaviorSubject<string>("");
+    this.clientEmail = new BehaviorSubject<string>("")
   }
 
   login(email: string, password: string):Promise<any> {
@@ -16,7 +18,7 @@ export class AuthService {
       'Access-Control-Allow-Origin':'*'
     })}
     return this.http.post("http://localhost:8080/clients/login",{email,password},options
-    ).toPromise().then((resp:any) =>{this.token.next(resp)});
+    ).toPromise().then((resp:any) =>{this.token.next(resp); this.clientEmail.next(email)});
   }
 
   logout():Promise<void>{

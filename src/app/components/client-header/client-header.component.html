@@ -17,11 +17,11 @@
         *ngIf = "token"
         (click)="onClickLogout()"
         class="btn btn-outline-dark">
-        Deconnexion
+        Déconnexion
       </button>
     </div>
   </div>
 </nav>
 <div id="hello">
-  <p>Bonjour Lionel Martin</p>
+  <p>Bonjour {{client?.prenom}} {{client?.nom}}</p>
 </div>

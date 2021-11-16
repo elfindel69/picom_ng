@@ -7,6 +7,7 @@ import {StatsComponent} from "./views/stats/stats.component";
 import {AvisComponent} from "./views/avis/avis.component";
 import {LoginComponent} from "./views/login/login.component";
 import {ClientIndexComponent} from "./views/client-index/client-index.component";
+import {AuthGuard} from "./guards/auth.guard";
 
 let IndexComponent;
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path:'stats',component:StatsComponent},
   {path:'avis',component:AvisComponent},
   {path: 'login',component:LoginComponent},
-  {path: 'client/index',component:ClientIndexComponent},
+  {path: 'client/index',canActivate:[AuthGuard],component:ClientIndexComponent},
   {path: 'not-found',component:ErrorComponent},
   {path:"**",redirectTo:'not-found'}];
 

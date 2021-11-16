@@ -1,3 +1,19 @@
 <app-client-header></app-client-header>
 
-<p>It works ! </p>
+<div class="container d-flex flex myContent">
+  <ng-container *ngIf="annonces != null && annonces.length > 0">
+    <div *ngFor="let annonce of annonces" class="card mx-auto my-auto mt-auto">
+      <h3>{{annonce.titre}}</h3>
+      <p>{{annonce.description}}</p>
+      <p> du {{annonce.dateDeDebut|date:"dd/MM/yyyy"}} au {{annonce.dateDeFin|date:"dd/MM/yyyy"}}</p>
+      <div *ngFor="let zone of annonce.zones">
+        <p>{{zone.nom}}</p>
+      </div>
+      <a href="#" class="btn btn-primary">Stats</a>
+      <a href="#" class="btn btn-warning">Editer</a>
+      <br/>
+      <button (click)="onClickDeleteBtn(annonce.id)" class="btn btn-danger">Supprimer</button>
+    </div>
+  </ng-container>
+</div>
+
